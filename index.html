@@ -4,71 +4,66 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BitCalc — الصفحة الرئيسية</title>
-  <meta name="description" content="BitCalc — أداة حسابية بسيطة وسريعة.">
+  <meta name="description" content="BitCalc — أداة حسابية سريعة وبواجهة عصرية.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
+  <header class="hd">
     <div class="wrap">
       <a class="logo" href="/">BitCalc</a>
-      <nav class="main-nav">
+      <nav class="nav">
         <a href="#features">الميزات</a>
-        <a href="#about">عن الموقع</a>
+        <a href="#about">عن</a>
         <a href="#contact">تواصل</a>
       </nav>
     </div>
   </header>
 
   <main class="wrap">
-    <section class="hero">
-      <div class="hero-left">
-        <h1>أداة حسابية سريعة وبسيطة</h1>
-        <p>BitCalc تساعدك على إجراء الحسابات بسرعة وبواجهة واضحة على كل الأجهزة.</p>
-        <a class="cta" href="#features">ابدأ الآن</a>
+    <section class="hero dark">
+      <div class="hero-content">
+        <h1>حسابات سريعة. تصميم عصري.</h1>
+        <p>BitCalc — أداة خفيفة وسريعة مع واجهة تركز على التجربة.</p>
+        <div class="actions">
+          <a class="btn-primary" href="#features">جرب الآن</a>
+          <a class="btn-ghost" href="#about">المزيد</a>
+        </div>
       </div>
-      <div class="hero-right">
-        <div class="mockup">واجهة تجريبية</div>
-      </div>
+      <div class="hero-visual">واجهة تجريبية</div>
     </section>
 
-    <section id="features" class="features">
-      <article class="feature">
-        <h3>سهل الاستخدام</h3>
-        <p>واجهة مباشرة تتيح إجراء العمليات بسرعة.</p>
-      </article>
-      <article class="feature">
+    <section id="features" class="grid">
+      <div class="card">
+        <h3>أداء</h3>
+        <p>تحميل سريع وتجربة سلسة.</p>
+      </div>
+      <div class="card">
+        <h3>تصميم</h3>
+        <p>مظهر عصري يبرز المحتوى.</p>
+      </div>
+      <div class="card">
         <h3>متجاوب</h3>
-        <p>مصمم للعمل على الموبايل والكمبيوتر.</p>
-      </article>
-      <article class="feature">
-        <h3>خفيف وسريع</h3>
-        <p>تحميل سريع وتجربة مستخدم سلسة.</p>
-      </article>
+        <p>يعمل على كل الأجهزة.</p>
+      </div>
     </section>
 
     <section id="about" class="about">
       <h2>عن BitCalc</h2>
-      <p>موقع بسيط يقدم أدوات حسابية. يمكنك تطويره لاحقاً بإضافة ميزات تفاعلية.</p>
+      <p>نسعى لتقديم أدوات بسيطة بواجهة جذابة وسهلة الاستخدام.</p>
     </section>
 
     <section id="contact" class="contact">
-      <h2>تواصل معنا</h2>
-      <p>تابعنا على صفحات التواصل الاجتماعي أو أرسل رسالة عبر البريد.</p>
-      <div class="socials">
-        <a href="#">Twitter</a>
-        <a href="#">Facebook</a>
-      </div>
+      <h2>تواصل</h2>
+      <p>تابعنا أو أرسل اقتراحاتك.</p>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="ft">
     <div class="wrap">
-      <p>© <span id="year"></span> BitCalc — كل الحقوق محفوظة</p>
+      <p>© <span id="year"></span> BitCalc</p>
     </div>
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
 </html>
