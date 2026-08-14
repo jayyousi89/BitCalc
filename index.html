@@ -1,29 +1,74 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<!doctype html>
+<html lang="ar">
 <head>
-  <meta charset="UTF-8">
-  <title>BitCalc — الرئيسية</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BitCalc — الصفحة الرئيسية</title>
+  <meta name="description" content="BitCalc — أداة حسابية بسيطة وسريعة.">
+  <meta property="og:title" content="BitCalc">
+  <meta property="og:description" content="أداة حسابية بسيطة وسريعة.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#0b74de">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>BitCalc</h1>
-    <nav>
-      <a href="index.html">الرئيسية</a>
-      <a href="tools.html">الأدوات</a>
-      <a href="prices.html">الأسعار</a>
-      <a href="blog.html">المدونة</a>
-      <a href="premium.html">الاشتراك</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">BitCalc</a>
+      <nav class="nav">
+        <a href="#features">الميزات</a>
+        <a href="#about">عن الموقع</a>
+        <a href="#contact">تواصل</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <h2>مرحباً بك في BitCalc</h2>
-    <p>أدوات ذكية لمتابعة أسعار العملات الرقمية وحساب الأرباح.</p>
+  <main class="container">
+    <section class="hero">
+      <h1>أداة حسابية سريعة وبسيطة</h1>
+      <p>حسابات بتنسيق واضح، واجهة خفيفة وسريعة للعرض على كل الأجهزة.</p>
+      <a class="btn" href="#features">ابدأ الآن</a>
+    </section>
+
+    <section id="features" class="cards">
+      <article class="card">
+        <h3>سهل الاستخدام</h3>
+        <p>واجهة بسيطة تتيح للمستخدمين إجراء العمليات بسرعة.</p>
+      </article>
+      <article class="card">
+        <h3>متجاوب</h3>
+        <p>يعمل بشكل جيد على الموبايل والكمبيوتر.</p>
+      </article>
+      <article class="card">
+        <h3>خفيف وسريع</h3>
+        <p>تصميم مُحسّن لأداء أسرع وتحميل أقل.</p>
+      </article>
+    </section>
+
+    <section id="about" class="about">
+      <h2>عن BitCalc</h2>
+      <p>موقع بسيط لتقديم أدوات حسابية. يمكنك تطويره لاحقاً بإضافة ميزات تفاعلية أو حفظ النتائج.</p>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>تواصل معنا</h2>
+      <p>تابعنا على صفحات التواصل الاجتماعي أو أرسل لنا رسالة عبر البريد.</p>
+      <div class="socials">
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2026 BitCalc — جميع الحقوق محفوظة</p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> BitCalc — كل الحقوق محفوظة</p>
+    </div>
   </footer>
+
+  <script>
+    // سنة تلقائية في الفوتر
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
